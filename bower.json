@@ -1,0 +1,24 @@
+{
+  "name": "Todo-App",
+  "authors": [
+    "p_rex"
+  ],
+  "description": "Todo app built with backbone, require, bower, firebase, and bootstrap",
+  "main": "main",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/js",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "jquery": "~2.1.4",
+    "underscore-amd": "~1.5.2",
+    "backbone-amd": "~1.1.0",
+    "requirejs-tpl": "*"
+  }
+}
