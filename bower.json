@@ -19,6 +19,10 @@
     "jquery": "~2.1.4",
     "underscore-amd": "~1.5.2",
     "backbone-amd": "~1.1.0",
-    "requirejs-tpl": "*"
+    "requirejs-tpl": "*",
+    "firebase": "~2.3.2",
+    "backbonefire": "~0.5.1",
+    "Sortable": "~1.4.2",
+    "bootstrap-select": "~1.7.5"
   }
 }
