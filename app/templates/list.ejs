@@ -1,0 +1,11 @@
+<li class="list-group-item" data-toggle="collapse" data-target="<%= model.get('targetNum') %>"><%= model.get('title') %></li>
+<div id="<%= model.get('targetNum') %>" class="collapse panel-body">
+      <div class="row">
+          <div class="col-sm-6 text-center">
+              <p class="lead">Owner: <%= model.get('owner') %></p>
+          </div>
+          <div class="col-sm-6 text-center">
+              <p class="lead">Status: <%= model.get('status') %></p>
+          </div>
+      </div>
+</div>

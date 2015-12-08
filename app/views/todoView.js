@@ -21,6 +21,7 @@ define(function(require, exports, module){
 
             this.listenTo(this.model, 'change', this.render);
             this.listenTo(this.model, 'destroy', this.unrender);
+            //this.listenTo(this.model, 'change:owner', this.removeListItem)
         },
 
         render: function(){
@@ -40,11 +41,18 @@ define(function(require, exports, module){
             $('.modal-title').html(this.model.get('title'));
             $('#edit-todo').val(this.model.get('title'));
             this.$el.attr('data-id', this.model.get('targetNum'));
+            $('.selectpicker').selectpicker('val', '');
         },
 
         removeClass: function(){
             this.model.set({title: $('#edit-todo').val()});
             this.model.save();
+        },
+
+        removeListItem: function(){
+            if(this.model.get('owner') !== ''){
+                this.$el.remove();
+            }
         }
     });
 

@@ -67,3 +67,28 @@ button.close {
   text-align: center;
 }
 
+.modal-header {
+  h5 {
+    color: #fff;
+  }
+}
+
+.personal-list {
+  margin: 50px 0 10px;
+
+  .his-title,
+  .hers-title {
+    font-family: 'Clicker Script', cursive;
+  }
+
+  hr {
+    margin-top: -20px;
+    width: 15%;
+    background-color: #bbb;
+    border-color: #bbb;
+    color: #bbb;
+  }
+}
+
+
+

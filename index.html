@@ -22,29 +22,40 @@
             </div>
             <ul id="simpleList" class="list-group todo-list"></ul>
 
+            <div class="row personal-list">
+                <div class="col-sm-6 his">
+                    <p class="his-title lead text-center">His</p>
+                    <hr>
+                </div>
+                <div class="col-sm-6 hers">
+                    <p class="hers-title lead text-center">Hers</p>
+                    <hr>
+                </div>
+            </div>
+
             <div id="edit-modal" class="modal fade" role="dialog" aria-labelledby="myModalLabel" tabindex="-1">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header bg-primary">
                             <button type="button" class="close" data-dismiss="modal" aria-label="close">
                                 <i data-dismiss="modal" id="close-icon" class="fa fa-times" aria-hidden="true"></i>
                             </button>
-                            <h4 id="myModalLabel" class="modal-title"></h4>
+                            <h5 id="myModalLabel" class="modal-title"></h5>
                         </div>
                         <div class="modal-body">
                             <input type="text" class="form-control" id="edit-todo" placeholder="Edit Todo">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <select class="selectpicker show-tick" multiple title="His or Hers?" data-max-options="1">
-                                        <option>His</option>
-                                        <option>Hers</option>
+                                    <select class="owner selectpicker show-tick" multiple title="His or Hers?" data-max-options="1">
+                                        <option value="his">His</option>
+                                        <option value="hers">Hers</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-6">
-                                    <select class="selectpicker show-tick" multiple title="Status?" data-max-options="1">
-                                        <option>New</option>
-                                        <option>Started</option>
-                                        <option>Finished</option>
+                                    <select class="status selectpicker show-tick" multiple title="Status?" data-max-options="1">
+                                        <option value="new">New</option>
+                                        <option value="started">Started</option>
+                                        <option value="finished">Finished</option>
                                     </select>
                                 </div>
                             </div>
